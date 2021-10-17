@@ -1,0 +1,38 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+.close-modal {
+  width: fit-content;
+  height: min-content;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 1px;
+  right: 7px;
+}
+
+.close-modal:hover::after {
+  color: black;
+}
+
+.close-modal::after {
+  content: "\00d7";
+  display: block;
+  font-size: 2rem;
+  color: #808080;
+}
+
+.modal-content {
+  position: relative;
+}

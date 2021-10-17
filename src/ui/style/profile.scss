@@ -1,0 +1,145 @@
+@import "./main.scss";
+
+.home-link {
+  text-decoration: none;
+  color: $grey;
+  @extend .reg-12;
+  max-width: 84px;
+  border: solid 0.5px #c9cad1;
+  width: 92px;
+  min-width: fit-content;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 97%;
+
+  .profile-photo-container {
+    width: 84px;
+    height: 84px;
+
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  @extend .semibold-16;
+}
+
+.number-explanation {
+  @extend .med-16;
+  color: $grey;
+}
+
+.name-and-job {
+  @extend .med-16;
+}
+
+.bio {
+  @extend .med-12;
+  color: $dark-grey;
+}
+
+.name-and-job,
+.bio {
+  margin-bottom: 20px;
+}
+
+.bio {
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.links-container {
+  display: flex;
+  width: 90%;
+}
+
+.link-btn {
+  min-width: fit-content;
+  display: table-cell;
+  width: 100%;
+  height: 40px;
+  margin: 0 6px;
+  border-radius: 12px;
+  border: 0.5px solid;
+  text-align: center;
+  padding-top: 8px;
+  text-decoration: none;
+  @extend .med-16;
+}
+
+button.link-btn {
+  padding-top: 0px;
+}
+
+button.link-btn.edit {
+  background-color: white;
+  border: none;
+
+  &:hover {
+    background-color: #ececec;
+  }
+}
+
+.edit {
+  color: black;
+  border-color: $grey;
+  margin-right: auto;
+}
+
+.create {
+  color: white;
+  background-color: #0087ff;
+}
+
+.photo {
+  width: 33vw;
+  height: 33vw;
+}
+
+.user-photos {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    margin: 1px;
+  }
+}

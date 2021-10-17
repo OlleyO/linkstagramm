@@ -1,0 +1,52 @@
+.scrollbar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 12px;
+
+  .profile-photo-container {
+    margin-right: 15px;
+  }
+}
+
+.home {
+  .scrollbar {
+    position: relative;
+  }
+
+  .scrollbar::after,
+  .scrollbar::before {
+    position: fixed;
+    content: " ";
+    top: 0;
+    width: 25px;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 12px;
+  }
+
+  .scrollbar::before {
+    left: 0;
+  }
+
+  .scrollbar::after {
+    right: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .scrollbar {
+    .profile-photo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
